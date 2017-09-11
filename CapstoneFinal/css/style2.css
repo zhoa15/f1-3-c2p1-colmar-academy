@@ -1,0 +1,292 @@
+html{
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: #f8f8f8;
+  color: #404040;
+}
+
+h1{
+  font-size: 2.625rem;
+  padding: 10px 0;
+}
+h2{
+  font-size: 2rem;
+  padding: 10px 0;
+}
+h3{
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
+h4{
+  font-size: 1rem;
+}
+h5{
+  font-size: 0.875rem;
+  padding: 10px 0;
+}
+p{
+  line-height: 1.5rem;
+  padding: 8px 0;
+  width: 95%;
+}
+a{
+  text-decoration: none;
+}
+.bold{
+  font-weight: bold;
+}
+.thin{
+  font-weight: lighter;
+}
+.center{
+  text-align: center;
+}
+header{
+  width: 100%;
+  height: 64px;
+  background-color: white;
+  position: fixed;
+  z-index: 10;
+  border-bottom: 1px solid silver;
+}
+header .header-inner{
+  padding: 0 24px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items : center;
+}
+header .logo{
+  display: flex;
+}
+.logo .image-container{
+  height: 32px;
+}
+.logo .logo-name{
+  text-transform: uppercase;
+  font-size: 1.75rem;
+}
+.logo .logo-name #colmar{
+  color: DimGray;
+}
+.logo .logo-name #academy{
+  color: LightGray;
+}
+
+.desktop nav a{
+   display: inline-block;
+   float: left;
+   padding-left: 16px;
+   color: Gray;
+ }
+
+ .mobile{
+   display: none;
+ }
+
+section{
+  border-bottom: 1px solid silver;
+}
+.section-inner{
+  display: flex;
+  justify-content: center;
+}
+article{
+  width: 60%;
+  padding: 32px 24px;
+}
+aside{
+  width: 40%;
+  padding: 32px 24px;
+}
+
+.image-container img, .video-container video{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.banner-section{
+  padding-top: 64px;
+}
+.banner-section, .courses-section{
+  background-color: #c8c8c8;
+}
+
+.banner-section .text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+}
+.banner-section .text-container p{
+  font-size: 1.125rem;
+}
+.banner-section .text-container button{
+  background: DimGray;
+  color: white;
+  height: 48px;
+  border-radius: 2px;
+  font-size: 1.125rem;
+  margin: 8px 0;
+}
+
+.information-section article h2{
+  padding: 22px 0;
+}
+.information-section h5{
+  padding-top: 10px;
+}
+.information-section h5 a{
+  color: #404040;
+}
+.information-section aside{
+  border-left: 1px solid silver;
+  padding: 32px 0;
+}
+.box{
+  display: flex;
+  border-bottom: 1px solid silver;
+}
+.box:hover{
+  background-color: #c8c8c8;
+}
+.box .image-container{
+  width: 35%;
+  padding: 16px;
+}
+
+.box .text-container{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.courses-section {
+  padding: 32px 72px;
+}
+
+.courses-section .courses{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 22px;
+}
+.courses-section .grid-box{
+  margin: 16px;
+  max-width: 30%;
+  background-color: white;
+  transition: all 300ms ease-in;
+}
+.courses-section .grid-box .text-container{
+  width: 90%;
+  padding: 16px;
+}
+.courses-section .grid-box .text-container h4{
+  color: Gray;
+}
+.grid-box:hover{
+   box-shadow: 0 0 50px #000;
+   transform: scale(1.1);
+   cursor: pointer;
+}
+.thesis-section h2{
+  padding-top: 32px;
+}
+footer{
+  padding: 16px 24px 32px 24px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  border-top: 1px solid silver;
+  color: gray;
+}
+footer nav li{
+   display: inline-block;
+   float: left;
+   padding-left: 16px;
+   color: Gray;
+ }
+footer a{
+  color: gray;
+}
+
+@media only screen and (max-width: 640px){
+  html{
+    font-size: 16px;
+  }
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  .mobile nav{
+    height: 64px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .section-inner{
+    flex-direction: column;
+  }
+  article, aside{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .banner-section .text-container{
+    width: 90%;
+    padding: 32px 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image-container, .text-container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .box{
+    flex-direction: column;
+    padding: 16px;
+    margin: 0;
+    border: 0;
+  }
+  .box .image-container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .box .text-container{
+    width: 90%;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .courses-section {
+    padding: 32px 0;
+    background-color: #f8f8f8;
+  }
+  .courses-section .courses{
+    display: block;
+  }
+  .courses-section .grid-box{
+    max-width: 100%;
+    background-color: #c8c8c8;
+  }
+  .grid-box:hover{
+     transform: scale(1);
+  }
+  footer{
+    padding: 0;
+    padding-top: 24px;
+    padding-left: 24px;
+  }
+  footer a{
+    padding: 16px 0;
+    text-align: center;
+  }
+}
